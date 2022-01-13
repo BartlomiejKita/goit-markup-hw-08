@@ -177,7 +177,8 @@ button {
   align-items: center;
 }
 
-.filter-btn:hover {
+.filter-btn:hover,
+.filter-btn:focus {
   cursor: pointer;
   color: #ffffff;
   background-color: var(--hover-color);

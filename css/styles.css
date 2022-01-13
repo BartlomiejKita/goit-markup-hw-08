@@ -3,6 +3,8 @@
   --second-font-family: "Raleway", sans-serif;
   --main-txt-color: #212121;
   --grey-txt-color: #757575;
+  --white-txt-color: #ffffff;
+  --dark-background-color: #2f303a;
   --hover-color: #2196f3;
 }
 
@@ -58,7 +60,7 @@ button {
 }
 
 .main-header-container {
-  background: #2f303a;
+  background-color: var(--dark-background-color);
 }
 
 .main-header {
@@ -68,7 +70,7 @@ button {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-txt-color);
 }
 
 .primary-btn {
@@ -82,7 +84,7 @@ button {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--white-txt-color);
 }
 
 .primary-btn:hover {
@@ -141,7 +143,7 @@ button {
 /* ====== FOOTER ====== */
 
 .footer {
-  background: #2f303a;
+  background-color: var(--dark-background-color);
 }
 .address-list-link {
   font-style: normal;
@@ -157,11 +159,11 @@ button {
 }
 
 .logo-light {
-  color: #ffffff;
+  color: var(--white-txt-color);
 }
 
 .street {
-  color: #ffffff;
+  color: var(--white-txt-color);
 }
 
 /* ====== PORTFOLIO ====== */
@@ -180,7 +182,7 @@ button {
 .filter-btn:hover,
 .filter-btn:focus {
   cursor: pointer;
-  color: #ffffff;
+  color: var(--white-txt-color);
   background-color: var(--hover-color);
 }
 

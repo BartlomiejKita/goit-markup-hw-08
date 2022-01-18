@@ -16,7 +16,7 @@ button {
 	font-family: inherit;
 }
 /* ====== COMPONENTS ====== */
-.active {
+.navigation-list-item-link.active {
 	color: var(--hover-color);
 }
 
@@ -48,6 +48,10 @@ a {
 	line-height: 1.142;
 	letter-spacing: 0.02em;
 	text-decoration: ;
+}
+
+.navigation-list-item-link {
+	color: var(--main-txt-color);
 }
 
 .email,

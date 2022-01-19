@@ -171,14 +171,25 @@ a {
 
 /* ====== OUR ATRIBUTES ====== */
 
+.our-atributes {
+	display: flex;
+}
+
+.atributes-list {
+	display: flex;
+}
 .atributes-list-item-header {
 	font-weight: 700;
 	font-size: 14px;
 	line-height: 1.142;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
+	padding-bottom: 10px;
+	
 }
-
+.atributes-list-item-header:not(:last-child) {
+	padding-right: 30px;
+}
 .atributes-list-item-text {
 	font-size: 14px;
 	line-height: 1.714;

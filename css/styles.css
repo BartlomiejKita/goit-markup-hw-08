@@ -15,15 +15,77 @@ body {
 button {
 	font-family: inherit;
 }
-/* ====== COMPONENTS ====== */
-.navigation-list-item-link.active {
-	color: var(--hover-color);
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul,
+ol {
+	margin: 0;
+	padding: 0;
+}
+
+.list {
+	list-style: none;
+}
+
+img {
+	display: block;
 }
 
 a {
 	text-decoration: none;
 }
+
+.container {
+	width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+.section {
+	padding-top: 94px;
+	padding-bottom: 94px;
+}
+/* ====== COMPONENTS ====== */
+.navigation-list-item-link.active {
+	color: var(--hover-color);
+}
+
 /* ====== HEADER ====== */
+.header .container {
+	display: flex;
+	align-items: center;
+}
+
+.navigation {
+	display: flex;
+}
+.navigation-list {
+	display: flex;
+}
+
+.navigation-list-item:not(:last-child) {
+	margin-right: 46px;
+}
+
+.email {
+	margin-left: auto;
+	margin-right: 50px;
+}
+
 .logo-link {
 	font-family: var(--second-font-family);
 	font-style: normal;
@@ -33,6 +95,10 @@ a {
 
 	letter-spacing: 0.03em;
 	color: var(--hover-color);
+
+	padding-top: 24px;
+	padding-bottom: 25px;
+	margin-right: 93px;
 }
 
 .logo-dark {
@@ -69,6 +135,7 @@ a {
 
 .main-header-container {
 	background-color: var(--dark-background-color);
+	height: 600px;
 }
 
 .main-header {
@@ -79,6 +146,7 @@ a {
 	letter-spacing: 0.06em;
 	text-transform: uppercase;
 	color: var(--white-txt-color);
+	padding: 200px 452px 30px;
 }
 
 .primary-btn {
@@ -93,6 +161,8 @@ a {
 	text-align: center;
 	letter-spacing: 0.06em;
 	color: var(--white-txt-color);
+	padding: 10px 41px;
+	margin: 0 auto;
 }
 
 .primary-btn:hover {

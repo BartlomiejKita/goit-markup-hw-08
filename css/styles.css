@@ -86,7 +86,7 @@ a {
 	margin-right: 50px;
 }
 
-.logo-link {
+.header .logo-link {
 	font-family: var(--second-font-family);
 	font-style: normal;
 	font-weight: 700;
@@ -171,13 +171,10 @@ a {
 
 /* ====== OUR ATRIBUTES ====== */
 
-.our-atributes {
-	display: flex;
-}
-
 .atributes-list {
 	display: flex;
 }
+
 .atributes-list-item-header {
 	font-weight: 700;
 	font-size: 14px;
@@ -185,8 +182,8 @@ a {
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 	padding-bottom: 10px;
-	
 }
+
 .atributes-list-item-header:not(:last-child) {
 	padding-right: 30px;
 }
@@ -205,20 +202,39 @@ a {
 	line-height: 1.166;
 	text-align: center;
 	letter-spacing: 0.03em;
+	padding-bottom: 50px;
+}
+
+.what-we-do-list {
+	display: flex;
+	justify-content: space-between;
 }
 
 /* ====== OUR TEAM ====== */
 
-.our-team {
+.our-team-background {
 	background-color: #f5f4fa;
 }
 
+.our-team-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.our-team-list-item {
+	background-color: #ffffff;
+}
+.second-header {
+	padding-bottom: 50px;
+}
 .our-team-list-employee {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 0.842;
 	text-align: center;
 	letter-spacing: 0.03em;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 
 .our-team-list-occupation {
@@ -227,12 +243,38 @@ a {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--grey-txt-color);
+	padding-bottom: 30px;
 }
 
 /* ====== FOOTER ====== */
 
-.footer {
+.footer-background {
 	background-color: var(--dark-background-color);
+}
+
+.footer .container {
+	padding-top: 60px;
+}
+.footer .logo-link {
+	font-family: var(--second-font-family);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.192;
+
+	letter-spacing: 0.03em;
+	color: var(--hover-color);
+}
+
+.address-list {
+	padding-top: 20px;
+}
+
+.address-list-item:not(:last-child) {
+	padding-bottom: 9px;
+}
+.address-list-item:last-child {
+	padding-bottom: 60px;
 }
 .address-list-link {
 	font-style: normal;

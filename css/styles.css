@@ -125,10 +125,29 @@ a {
 .email,
 .phone-number {
 	color: var(--grey-txt-color);
+	display: flex;
+	align-items: center;
 }
 
 .navigation-list-item-link:hover,
-.navigation-list-item-link:focus,
+.navigation-list-item-link:focus {
+	color: var(--hover-color);
+}
+
+.envelope-icon {
+	width: 16px;
+	height: 12px;
+	margin-right: 10px;
+	fill: var(--grey-txt-color);
+}
+
+.smartphone-icon {
+	width: 10px;
+	height: 16px;
+	margin-right: 10px;
+	fill: var(--grey-txt-color);
+}
+
 .email:hover,
 .email:focus,
 .phone-number:hover,
@@ -136,6 +155,12 @@ a {
 	color: var(--hover-color);
 }
 
+.email:hover .envelope-icon,
+.email:focus .envelope-icon,
+.phone-number:hover .smartphone-icon,
+.phone-number:focus .smartphone-icon {
+	fill: var(--hover-color);
+}
 .main-header-container {
 	background-color: var(--dark-background-color);
 	height: 600px;

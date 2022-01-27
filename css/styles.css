@@ -5,6 +5,7 @@
 	--grey-txt-color: #757575;
 	--white-txt-color: #ffffff;
 	--dark-background-color: #2f303a;
+	--light-grey-backgorund-color: #f5f4fa;
 	--hover-color: #2196f3;
 }
 
@@ -162,8 +163,16 @@ a {
 	fill: var(--hover-color);
 }
 .main-header-container {
-	background-color: var(--dark-background-color);
+	background-image: linear-gradient(
+			rgba(47, 48, 58, 0.4),
+			rgba(47, 48, 58, 0.4)
+		),
+		url(/images/images_mainpage/bgimg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 1600px;
 	height: 600px;
+	margin: 0 auto;
 }
 
 .main-header {
@@ -201,8 +210,26 @@ a {
 
 /* ====== OUR ATRIBUTES ====== */
 
+.our-atributes-section {
+	padding-top: 94px;
+	padding-bottom: 0px;
+}
 .atributes-list {
 	display: flex;
+}
+
+.atributes-icon-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 120px;
+	background-color: var(--light-grey-backgorund-color);
+	margin-bottom: 30px;
+}
+
+.atributes-icon {
+	width: 70px;
+	height: 70px;
 }
 
 .atributes-list-item-header {
@@ -214,9 +241,10 @@ a {
 	padding-bottom: 10px;
 }
 
-.atributes-list-item-header:not(:last-child) {
+.atributes-list-item:not(:last-child) {
 	padding-right: 30px;
 }
+
 .atributes-list-item-text {
 	font-size: 14px;
 	line-height: 1.714;
@@ -243,7 +271,7 @@ a {
 /* ====== OUR TEAM ====== */
 
 .our-team-background {
-	background-color: #f5f4fa;
+	background-color: var(--light-grey-backgorund-color);
 }
 
 .our-team-list {
@@ -252,7 +280,10 @@ a {
 }
 
 .our-team-list-item {
-	background-color: #ffffff;
+	background-color: var(--white-txt-color);
+	box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+		0px 2px 1px rgba(0, 0, 0, 0.2);
+	border-radius: 0px 0px 4px 4px;
 }
 .second-header {
 	padding-bottom: 50px;
@@ -273,7 +304,41 @@ a {
 	text-align: center;
 	letter-spacing: 0.03em;
 	color: var(--grey-txt-color);
-	padding-bottom: 30px;
+	padding-bottom: 16px;
+}
+
+.socials-list {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 30px;
+}
+
+.socials-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	border-radius: 50%;
+	padding: 12px;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+	background-color: var(--hover-color);
+	/* fill: var(--white-txt-color); */
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+	fill: var(--white-txt-color);
+}
+
+.socials-icon {
+	width: 20px;
+	height: 20px;
+	fill: #afb1b8;
 }
 
 /* ====== FOOTER ====== */

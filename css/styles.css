@@ -327,7 +327,6 @@ a {
 .socials-link:hover,
 .socials-link:focus {
 	background-color: var(--hover-color);
-	/* fill: var(--white-txt-color); */
 }
 
 .socials-link:hover .socials-icon,

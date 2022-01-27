@@ -341,11 +341,6 @@ a {
 	align-items: center;
 }
 
-.projects-list-wrap {
-	display: flex;
-	flex-wrap: wrap;
-}
-
 .filter-btn:hover,
 .filter-btn:focus {
 	cursor: pointer;

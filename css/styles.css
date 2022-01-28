@@ -66,9 +66,14 @@ a {
 }
 
 /* ====== HEADER ====== */
-.header {
+
+.header-line {
 	border-bottom: 1px solid #ececec;
+	position: relative;
+	width: 1600px;
+	margin: 0 auto;
 }
+
 .header .container {
 	display: flex;
 	align-items: center;
@@ -270,8 +275,10 @@ a {
 
 /* ====== OUR TEAM ====== */
 
-.our-team-background {
+.our-team {
 	background-color: var(--light-grey-backgorund-color);
+	width: 1600px;
+	margin: 0 auto;
 }
 
 .our-team-list {
@@ -340,14 +347,52 @@ a {
 	fill: #afb1b8;
 }
 
+/* ====== OUR CLIENTS ====== */
+
+.our-clients-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.our-clients-link {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 170px;
+	height: 92px;
+	border: 1px solid #afb1b8;
+	box-sizing: border-box;
+	border-radius: 4px;
+	padding: 17.71px 32px 14.25px;
+}
+
+.our-clients-icon {
+	width: 106px;
+	height: 60px;
+	fill: #afb1b8;
+}
+
+.our-clients-link:hover,
+.our-clients-link:focus {
+	border-color: var(--hover-color);
+}
+.our-clients-link:hover .our-clients-icon,
+.our-clients-link:focus .our-clients-icon {
+	fill: var(--hover-color);
+}
+
 /* ====== FOOTER ====== */
 
-.footer-background {
+.footer {
 	background-color: var(--dark-background-color);
+	width: 1600px;
+	margin: 0 auto;
 }
 
 .footer .container {
 	padding-top: 60px;
+	display: flex;
 }
 .footer .logo-link {
 	font-family: var(--second-font-family);
@@ -391,6 +436,32 @@ a {
 	color: var(--white-txt-color);
 }
 
+.join-us {
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	color: var(--white-txt-color);
+	padding-top: 12px;
+	padding-bottom: 20px;
+}
+
+.contact-us-wrapper {
+	padding-left: 70px;
+}
+
+.grey-circle {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.social-padding:not(:last-child) {
+	padding-right: 10px;
+}
+
+.white-icon {
+	fill: var(--white-txt-color);
+}
 /* ====== PORTFOLIO ====== */
 
 .filters-list {

@@ -207,6 +207,7 @@ a {
 	color: var(--white-txt-color);
 	padding: 10px 41px;
 	margin: 0 auto;
+	border: none;
 }
 
 .primary-btn:hover {

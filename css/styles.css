@@ -225,6 +225,7 @@ a {
 	height: 120px;
 	background-color: var(--light-grey-backgorund-color);
 	margin-bottom: 30px;
+	border-radius: 4px;
 }
 
 .atributes-icon {

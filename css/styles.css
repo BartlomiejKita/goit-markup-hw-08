@@ -67,11 +67,8 @@ a {
 
 /* ====== HEADER ====== */
 
-.header-line {
+.header {
 	border-bottom: 1px solid #ececec;
-	position: relative;
-	width: 1600px;
-	margin: 0 auto;
 }
 
 .header .container {
@@ -273,7 +270,6 @@ a {
 
 .our-team {
 	background-color: var(--light-grey-backgorund-color);
-	width: 1600px;
 	margin: 0 auto;
 }
 
@@ -380,7 +376,6 @@ a {
 
 .footer {
 	background-color: var(--dark-background-color);
-	width: 1600px;
 	margin: 0 auto;
 }
 

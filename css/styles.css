@@ -119,6 +119,7 @@ a {
 	font-size: 14px;
 	line-height: 1.142;
 	letter-spacing: 0.02em;
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .navigation-list-item-link {
@@ -321,22 +322,21 @@ a {
 	height: 44px;
 	border-radius: 50%;
 	padding: 12px;
-}
-
-.socials-link:hover,
-.socials-link:focus {
-	background-color: var(--hover-color);
-}
-
-.socials-link:hover .socials-icon,
-.socials-link:focus .socials-icon {
-	fill: var(--white-txt-color);
+	color: #afb1b8;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-icon {
 	width: 20px;
 	height: 20px;
-	fill: #afb1b8;
+	fill: currentColor;
+}
+
+.socials-link:hover,
+.socials-link:focus {
+	background-color: var(--hover-color);
+	color: var(--white-txt-color);
 }
 
 /* ====== OUR CLIENTS ====== */
@@ -358,6 +358,8 @@ a {
 	border-radius: 4px;
 	padding: 17.71px 32px 14.25px;
 	color: #afb1b8;
+	transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-clients-icon {
@@ -410,6 +412,7 @@ a {
 	line-height: 1.714;
 	letter-spacing: 0.03em;
 	color: rgba(255, 255, 255, 0.6);
+	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-list-link:hover,
@@ -474,6 +477,7 @@ a {
 
 .projects-list-item {
 	margin-bottom: 30px;
+	transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .projects-list-item:hover {
@@ -496,6 +500,9 @@ a {
 	border: none;
 	border-radius: 4px;
 	padding: 6px 22px;
+	transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+		box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:hover,

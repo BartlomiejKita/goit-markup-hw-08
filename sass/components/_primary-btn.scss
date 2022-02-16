@@ -16,8 +16,9 @@
 	border: none;
 	width: 200px;
 	height: 50px;
+
+	&:hover {
+		cursor: pointer;
+	}
 }
 
-.primary-btn:hover {
-	cursor: pointer;
-}

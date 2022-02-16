@@ -21,8 +21,8 @@
 	<body>
 		<header class="header">
 			<div class="container">
-				<a class="logo-link" href="index.html"
-					>Web<span class="logo-dark">Studio</span></a
+				<a class="logo" href="index.html"
+					>Web<span class="logo__accent--dark-theme">Studio</span></a
 				>
 
 				<nav class="navigation">
@@ -69,87 +69,87 @@
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
 				<button type="button" class="close-btn" data-modal-close>
-					<svg class="close-btn-icon">
+					<svg class="close-btn__icon">
 						<use href="images/icons.svg#close-icon"></use>
 					</svg>
 				</button>
-				<h2 class="modal-header">Zostaw swoje dane w formularzu poniżej</h2>
+				<h2 class="modal__header">Zostaw swoje dane w formularzu poniżej</h2>
 
 				<form
 					action="#"
 					name="contact_form"
 					autocomplete="on"
-					class="modal-form"
+					class="modal__form"
 				>
-					<label for="modal-form-input-username" class="modal-form-label"
+					<label for="modal-form-input-username" class="modal__label"
 						>Imie
 					</label>
 
-					<div class="input-wrapper">
+					<div class="modal__input--position">
 						<input
 							type="text"
 							name="username"
-							class="modal-form-input"
+							class="modal__input"
 							id="modal-form-input-username"
 							required
 						/>
-						<svg class="modal-form-icon">
+						<svg class="modal__icon">
 							<use href="images/icons.svg#person-black"></use>
 						</svg>
 					</div>
 
-					<label for="modal-form-input-phonenumber" class="modal-form-label"
+					<label for="modal-form-input-phonenumber" class="modal__label"
 						>Telefon</label
 					>
-					<div class="input-wrapper">
+					<div class="modal__input--position">
 						<input
 							type="tel"
 							name="userphone"
-							class="modal-form-input"
+							class="modal__input"
 							id="modal-form-input-phonenumber"
 							required
 						/>
-						<svg class="modal-form-icon">
+						<svg class="modal__icon">
 							<use href="images/icons.svg#phone-black"></use>
 						</svg>
 					</div>
-					<label for="modal-form-input-useremail" class="modal-form-label"
+					<label for="modal-form-input-useremail" class="modal__label"
 						>Email</label
 					>
-					<div class="input-wrapper">
+					<div class="modal__input--position">
 						<input
 							type="email"
 							name="useremail"
-							class="modal-form-input"
+							class="modal__input"
 							id="modal-form-input-useremail"
 							required
 						/>
-						<svg class="modal-form-icon">
+						<svg class="modal__icon">
 							<use href="images/icons.svg#email-black"></use>
 						</svg>
 					</div>
-					<label for="modal-form-textarea" class="modal-form-label"
+					<label for="modal-form-textarea" class="modal__label"
 						>Komentarz</label
 					>
 					<textarea
 						name="userfeedback"
 						id="modal-form-textarea"
-						class="modal-form-textarea-feedback"
+						class="modal__textarea"
 						placeholder="Wprowadź tekst"
 					></textarea>
-					<div class="checkbox-wrapper">
+					<div class="modal__checkbox--position">
 						<input
 							type="checkbox"
 							name="accept-terms"
 							id="modal-form-checkbox"
-							class="modal-form-checkbox-terms visually-hidden"
+							class="modal__checkbox visually-hidden"
 							required
 						/>
 
-						<label for="modal-form-checkbox" class="modal-form-terms"
+						<label for="modal-form-checkbox" class="modal__terms"
 							>Oświadczam iż akceptuję
-							<a href="#" class="modal-form-links"> Regulamin</a> i
-							<a href="#" class="modal-form-links"
+							<a href="#" class="modal__links"> Regulamin</a> i
+							<a href="#" class="modal__links"
 								>Politykę Prywatności.</a
 							></label
 						>
@@ -276,28 +276,28 @@
 							<h3 class="our-team-list-employee">John Doe</h3>
 							<p class="our-team-list-occupation">Product Designer</p>
 							<ul class="socials-list list">
-								<li class="socials-list-item">
-									<a href="#" class="socials-link">
-										<svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link">
+										<svg class="socials-list__icon">
 											<use href="images/icons.svg#instagram"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#twitter"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#facebook"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#linkedin"></use></svg
 									></a>
 								</li>
@@ -314,28 +314,28 @@
 							<h3 class="our-team-list-employee">John Doe</h3>
 							<p class="our-team-list-occupation">Frontend Developer</p>
 							<ul class="socials-list list">
-								<li class="socials-list-item">
-									<a href="#" class="socials-link">
-										<svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link">
+										<svg class="socials-list__icon">
 											<use href="images/icons.svg#instagram"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#twitter"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#facebook"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#linkedin"></use></svg
 									></a>
 								</li>
@@ -352,28 +352,28 @@
 							<h3 class="our-team-list-employee">John Doe</h3>
 							<p class="our-team-list-occupation">Marketing</p>
 							<ul class="socials-list list">
-								<li class="socials-list-item">
-									<a href="#" class="socials-link">
-										<svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link">
+										<svg class="socials-list__icon">
 											<use href="images/icons.svg#instagram"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#twitter"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#facebook"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#linkedin"></use></svg
 									></a>
 								</li>
@@ -390,28 +390,28 @@
 							<h3 class="our-team-list-employee">John Doe</h3>
 							<p class="our-team-list-occupation">UI Designer</p>
 							<ul class="socials-list list">
-								<li class="socials-list-item">
-									<a href="#" class="socials-link">
-										<svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link">
+										<svg class="socials-list__icon">
 											<use href="images/icons.svg#instagram"></use>
 										</svg>
 									</a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#twitter"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#facebook"></use></svg
 									></a>
 								</li>
-								<li class="socials-list-item">
-									<a href="#" class="socials-link"
-										><svg class="socials-icon">
+								<li class="socials-list__item">
+									<a href="#" class="socials-list__link"
+										><svg class="socials-list__icon">
 											<use href="images/icons.svg#linkedin"></use></svg
 									></a>
 								</li>
@@ -470,8 +470,8 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="address-wrapper">
-					<a class="logo-link" href="index.html"
-						>Web<span class="logo-light">Studio</span></a
+					<a class="logo" href="index.html"
+						>Web<span class="logo__accent--light-theme">Studio</span></a
 					>
 					<address class="address">
 						<ul class="address-list list">
@@ -499,28 +499,28 @@
 				<div class="contact-us-wrapper">
 					<p class="join-us">DOŁĄCZ DO NAS</p>
 					<ul class="socials-list list">
-						<li class="socials-list-item social-padding">
-							<a href="#" class="socials-link grey-circle">
-								<svg class="socials-icon white-icon">
+						<li class="socials-list__item social-padding">
+							<a href="#" class="socials-list__link grey-circle">
+								<svg class="socials-list__icon white-icon">
 									<use href="images/icons.svg#instagram"></use>
 								</svg>
 							</a>
 						</li>
-						<li class="socials-list-item social-padding">
-							<a href="#" class="socials-link grey-circle"
-								><svg class="socials-icon white-icon">
+						<li class="socials-list__item social-padding">
+							<a href="#" class="socials-list__link grey-circle"
+								><svg class="socials-list__icon white-icon">
 									<use href="images/icons.svg#twitter"></use></svg
 							></a>
 						</li>
-						<li class="socials-list-item social-padding">
-							<a href="#" class="socials-link grey-circle"
-								><svg class="socials-icon white-icon">
+						<li class="socials-list__item social-padding">
+							<a href="#" class="socials-list__link grey-circle"
+								><svg class="socials-list__icon white-icon">
 									<use href="images/icons.svg#facebook"></use></svg
 							></a>
 						</li>
-						<li class="socials-list-item social-padding">
-							<a href="#" class="socials-link grey-circle"
-								><svg class="socials-icon white-icon">
+						<li class="socials-list__item social-padding">
+							<a href="#" class="socials-list__link grey-circle"
+								><svg class="socials-list__icon white-icon">
 									<use href="images/icons.svg#linkedin"></use></svg
 							></a>
 						</li>

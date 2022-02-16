@@ -1,4 +1,4 @@
-.header .logo-link {
+.logo {
 	font-family: var(--second-font-family);
 	font-style: normal;
 	font-weight: 700;
@@ -11,4 +11,14 @@
 	padding-top: 24px;
 	padding-bottom: 25px;
 	margin-right: 93px;
+
+
+&__accent--dark-theme {
+	color: var(--main-txt-color);
+}
+
+&__accent--light-theme {
+	color: var(--white-txt-color);
+}
+
 }

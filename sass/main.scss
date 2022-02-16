@@ -1,13 +1,18 @@
 @import "./utils/visually-hidden";
-@import "./utils/_variables";
-@import "./base/_common";
-@import "./base/_container";
-@import "./base/_section";
+@import "./utils/variables";
+
+@import "./base/common";
+@import "./base/container";
+@import "./base/section";
+
 @import "./components/close-btn";
 @import "./components/logo";
+@import "./components/backdrop";
 @import "./components/modal";
 @import "./components/primary-btn";
-@import "./components/social-icons";
+@import "./components/social-list";
+@import "./components/second-header";
+
 @import "./layout/header";
 @import "./layout/hero";
 @import "./layout/our-atributes";
@@ -15,6 +20,5 @@
 @import "./layout/our-team";
 @import "./layout/what-we-do";
 @import "./layout/footer";
+
 @import "./pages/portfolio";
-
-

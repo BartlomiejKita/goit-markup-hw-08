@@ -70,6 +70,11 @@ a {
   margin: 0 auto;
 }
 
+.footer .container {
+  padding-top: 60px;
+  display: flex;
+}
+
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -304,6 +309,10 @@ a {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+
+.socials-list__item:not(:last-child) {
+  padding-right: 10px;
 }
 
 .socials-list__link {
@@ -605,34 +614,19 @@ a {
   margin: 0 auto;
 }
 
-.footer .container {
-  padding-top: 60px;
-  display: flex;
-}
-
-.footer .logo-link {
-  font-family: var(--second-font-family);
-  font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-  color: var(--hover-color);
-}
-
 .address-list {
   padding-top: 20px;
 }
 
-.address-list-item:not(:last-child) {
+.address-list__item:not(:last-child) {
   padding-bottom: 9px;
 }
 
-.address-list-item:last-child {
+.address-list__item:last-child {
   padding-bottom: 60px;
 }
 
-.address-list-link {
+.address-list__link {
   font-style: normal;
   font-size: 14px;
   line-height: 1.714;
@@ -641,13 +635,28 @@ a {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.address-list-link:hover,
-.address-list-link:focus {
+.address-list__link:hover, .address-list__link:focus {
   color: var(--hover-color);
 }
 
-.street {
+.address-list__link--light-theme {
   color: var(--white-txt-color);
+}
+
+.join-us--grey-link-theme {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-us--white-icon-theme {
+  fill: var(--white-txt-color);
+}
+
+.join-us__wrapper {
+  padding-left: 70px;
+}
+
+.sign-up__wrapper {
+  padding-left: 78px;
 }
 
 .join-us,
@@ -662,19 +671,23 @@ a {
   padding-bottom: 20px;
 }
 
-.form-sign-up {
+.sign-up__form {
   display: flex;
 }
 
-.contact-us-wrapper {
-  padding-left: 70px;
+.sign-up__btn {
+  position: relative;
+  padding-right: 76px;
 }
 
-.newsletter-wrapper {
-  padding-left: 78px;
+.sign-up__icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 28px;
 }
 
-.input-sign-up {
+.sign-up__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -686,37 +699,13 @@ a {
   color: var(--white-txt-color);
 }
 
-.input-sign-up:focus {
+.sign-up__input:focus {
   outline: none;
   border-color: var(--white-txt-color);
 }
 
-.input-sign-up:focus::placeholder {
+.sign-up__input:focus::placeholder {
   color: var(--white-txt-color);
-}
-
-.sign-up-btn {
-  position: relative;
-  padding-right: 76px;
-}
-
-.sign-up-icon {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  right: 28px;
-}
-
-.grey-circle {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.social-padding:not(:last-child) {
-  padding-right: 10px;
-}
-
-.white-icon {
-  fill: var(--white-txt-color);
 }
 
 .filters-list {

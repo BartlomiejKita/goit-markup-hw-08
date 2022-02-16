@@ -9,6 +9,10 @@
 		height: 20px;
 		fill: currentColor;
 	}
+
+	&__item:not(:last-child) {
+		padding-right: 10px;
+	}
 }
 
 .socials-list__link {

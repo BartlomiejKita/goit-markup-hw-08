@@ -447,7 +447,7 @@ a {
   fill: currentColor;
 }
 
-.main-header-container {
+.hero__container {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/images_mainpage/bgimg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -456,7 +456,7 @@ a {
   margin: 0 auto;
 }
 
-.main-header {
+.hero__header {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.363;

@@ -579,16 +579,16 @@ a {
   padding-bottom: 16px;
 }
 
-.what-we-do-list {
+.what-we-do__list {
   display: flex;
   justify-content: space-between;
 }
 
-.what-we-do-list-item {
+.what-we-do__item {
   position: relative;
 }
 
-.what-we-do-list-text {
+.what-we-do__text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.143;

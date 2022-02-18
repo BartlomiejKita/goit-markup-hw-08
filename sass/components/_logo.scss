@@ -1,24 +1,22 @@
 .logo {
-	font-family: var(--second-font-family);
+	font-family: $secondary-font-family;
 	font-style: normal;
 	font-weight: 700;
 	font-size: 26px;
 	line-height: 1.192;
 
 	letter-spacing: 0.03em;
-	color: var(--hover-color);
+	color: $accent-color;
 
 	padding-top: 24px;
 	padding-bottom: 25px;
 	margin-right: 93px;
 
+	&__accent--dark-theme {
+		color: $primary-dark-txt-color;
+	}
 
-&__accent--dark-theme {
-	color: var(--main-txt-color);
-}
-
-&__accent--light-theme {
-	color: var(--white-txt-color);
-}
-
+	&__accent--light-theme {
+		color: $primary-light-txt-color;
+	}
 }

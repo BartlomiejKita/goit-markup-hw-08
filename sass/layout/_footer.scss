@@ -1,5 +1,5 @@
 .footer {
-	background-color: var(--dark-background-color);
+	background-color: $primary-background-color;
 	margin: 0 auto;
 }
 
@@ -26,11 +26,11 @@
 
 	&:hover,
 	&:focus {
-		color: var(--hover-color);
+		color: $accent-color;
 	}
 
 	&--light-theme {
-		color: var(--white-txt-color);
+		color: $primary-light-txt-color;
 	}
 }
 
@@ -38,7 +38,7 @@
 	background: rgba(255, 255, 255, 0.1);
 }
 .join-us--white-icon-theme {
-	fill: var(--white-txt-color);
+	fill: $primary-light-txt-color;
 }
 
 .join-us__wrapper {
@@ -56,7 +56,7 @@
 	line-height: 1.143;
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
-	color: var(--white-txt-color);
+	color: $primary-light-txt-color;
 	padding-top: 12px;
 	padding-bottom: 20px;
 }
@@ -86,14 +86,14 @@
 	border-radius: 4px;
 	padding-left: 16px;
 	margin-right: 12px;
-	color: var(--white-txt-color);
+	color: $primary-light-txt-color;
 
 	&:focus {
 		outline: none;
-		border-color: var(--white-txt-color);
+		border-color: $primary-light-txt-color;
 	}
 
 	&:focus::placeholder {
-		color: var(--white-txt-color);
+		color: $primary-light-txt-color;
 	}
 }

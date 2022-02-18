@@ -1,8 +1,6 @@
-
-
 body {
-	font-family: var(--main-font-family);
-	color: var(--main-txt-color);
+	font-family: $primary-font-family;
+	color: $primary-dark-txt-color;
 }
 button {
 	font-family: inherit;

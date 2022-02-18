@@ -13,7 +13,7 @@
 		align-items: center;
 		justify-content: center;
 		height: 120px;
-		background-color: var(--light-grey-backgorund-color);
+		background-color: $secondary-backgorund-color;
 		margin-bottom: 30px;
 		border-radius: 4px;
 	}
@@ -35,6 +35,6 @@
 		font-size: 14px;
 		line-height: 1.714;
 		letter-spacing: 0.03em;
-		color: var(--grey-txt-color);
+		color: $secondary-txt-color;
 	}
 }

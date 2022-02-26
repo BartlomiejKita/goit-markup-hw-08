@@ -8,109 +8,8 @@
 	display: none;
 }
 
-.menu-mobile__open {
-	width: 40px;
-	height: 40px;
-	background-color: transparent;
-	border: none;
-}
 
-.menu-mobile__open-icon {
-	width: 24px;
-	height: 16px;
-	fill: $primary-dark-txt-color;
-}
-
-.menu-mobile__open-icon:focus,
-.menu-mobile__open-icon:hover {
-	fill: $accent-color;
-}
-
-.menu-mobile {
-	background-color: $secondary-light-background-color;
-	flex-direction: column;
-}
-
-.menu-mobile__close-btn {
-	top: 13px;
-	right: 20px;
-}
-
-.menu-mobile__list {
-	margin-top: 48px;
-	margin-bottom: 302px;
-	margin-left: 40px;
-}
-
-.menu-mobile__link {
-	color: $primary-dark-txt-color;
-	font-size: 40px;
-	font-weight: 500;
-	line-height: 1.175;
-	letter-spacing: 0.02em;
-}
-
-.menu-mobile__link--active {
-	color: $accent-color;
-}
-
-.menu-mobile__item:not(:last-child) {
-	margin-bottom: 32px;
-}
-
-.mobile-contacts {
-	margin-bottom: 64px;
-	margin-left: 40px;
-}
-
-.mobile-contacts__link {
-	color: $secondary-txt-color;
-	font-size: 24px;
-	font-weight: 500;
-	line-height: 1.167;
-	letter-spacing: 0.02em;
-}
-
-.mobile-contacts__link--accent {
-	color: $accent-color;
-	font-size: 34px;
-	font-weight: 500;
-	line-height: 1.176;
-	letter-spacing: 0.02em;
-}
-
-.mobile-contacts__item:not(:last-child) {
-	margin-bottom: 32px;
-}
-
-.mobile-socials {
-	display: flex;
-	margin-left: 40px;
-}
-
-.mobile-socials__item {
-	margin-right: 20px;
-	position: relative;
-}
-
-.mobile-socials__item:not(:first-child)::after {
-	position: absolute;
-	top: 0;
-	left: -10px;
-	content: "";
-	display: block;
-	width: 1px;
-	height: 22px;
-	background-color: rgba(33, 33, 33, 0.2);
-}
-
-.mobile-socials__link {
-	color: $accent-color;
-	font-size: 18px;
-	font-weight: 500;
-	line-height: 1.222;
-	letter-spacing: 0.02em;
-}
+// <!-- TABLET -->
 
 @media screen and (min-width: 768px) {
 	.menu-mobile__open {
@@ -219,6 +118,8 @@
 	}
 }
 
+// <!-- DESKTOP -->
+
 @media screen and (min-width: 1200px) {
 	.navigation {
 		display: flex;
@@ -239,31 +140,9 @@
 		align-items: center;
 	}
 
-	.email,
-	.phone-number {
-		color: $secondary-txt-color;
-		display: flex;
-		align-items: center;
-	}
-
-	.email:hover,
-	.email:focus,
-	.phone-number:hover,
-	.phone-number:focus {
-		color: $accent-color;
-	}
-
-	.email__icon {
-		width: 16px;
-		height: 12px;
-		margin-right: 10px;
-		fill: currentColor;
-	}
+	
 
 	.phone-number__icon {
-		width: 10px;
-		height: 16px;
 		margin-right: 10px;
-		fill: currentColor;
 	}
 }

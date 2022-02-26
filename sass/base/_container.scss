@@ -2,11 +2,18 @@
 	width: 100%;
 	min-width: 320px;
 	padding: 0 15px;
+
+	.hero & {
+		height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+	}
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
 	.container {
-		max-width: 480px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -15,10 +22,8 @@
 
 @media screen and (min-width: 768px) {
 	.container {
-		max-width: 768px;
 		display: flex;
 		align-items: center;
-		max-width: 768px;
 		padding: 0 15px;
 	}
 }
@@ -26,8 +31,13 @@
 @media screen and (min-width: 1200px) {
 	.container {
 		max-width: 1200px;
+		height: auto;
 		padding: 0 15px;
 		margin: 0 auto;
+
+		.hero & {
+			height: 600px;
+		}
 	}
 }
 

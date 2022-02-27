@@ -1,6 +1,6 @@
 .atributes {
 	padding-top: 60px;
-	padding-bottom: 0px;
+	padding-bottom: 60px;
 
 	&__list {
 		display: flex;
@@ -68,6 +68,7 @@
 
 		&__item:not(:last-child) {
 			margin-right: 30px;
+			margin-bottom: 0;
 		}
 
 		&__header {

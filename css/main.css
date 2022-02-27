@@ -73,6 +73,10 @@ a {
   margin: 0 auto;
 }
 
+.our-team .container {
+  display: block;
+}
+
 @media screen and (min-width: 320px) {
   .container {
     display: flex;
@@ -99,11 +103,21 @@ a {
   .hero .container {
     height: 600px;
   }
+  .what-we-do .container {
+    display: block;
+  }
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .close-btn {
@@ -390,11 +404,21 @@ a {
 
 .second-header {
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
+  font-size: 28px;
+  line-height: 1.179;
   text-align: center;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .second-header {
+    font-size: 36px;
+    line-height: 1.166;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+  }
 }
 
 .menu-mobile {
@@ -685,7 +709,7 @@ a {
 
 .atributes {
   padding-top: 60px;
-  padding-bottom: 0px;
+  padding-bottom: 60px;
 }
 
 .atributes__list {
@@ -748,6 +772,7 @@ a {
   }
   .atributes__item:not(:last-child) {
     margin-right: 30px;
+    margin-bottom: 0;
   }
   .atributes__header {
     text-align: left;
@@ -792,6 +817,7 @@ a {
 
 .our-team__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -799,6 +825,10 @@ a {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+}
+
+.our-team__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .our-team__employee {
@@ -820,31 +850,44 @@ a {
   padding-bottom: 16px;
 }
 
-.what-we-do__list {
-  display: flex;
-  justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .our-team__item {
+    margin-bottom: 30px;
+  }
 }
 
-.what-we-do__item {
-  position: relative;
+.what-we-do {
+  display: none;
 }
 
-.what-we-do__text {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.143;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  width: 100%;
-  height: 70px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(47, 48, 58, 0.8);
-  position: absolute;
-  bottom: 0;
+@media screen and (min-width: 1200px) {
+  .what-we-do {
+    display: block;
+  }
+  .what-we-do__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .what-we-do__item {
+    position: relative;
+  }
+  .what-we-do__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+  }
 }
 
 .footer {

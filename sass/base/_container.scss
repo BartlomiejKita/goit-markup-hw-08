@@ -18,6 +18,11 @@
 	.our-clients & {
 		display: block;
 	}
+
+	.footer & {
+		display: block;
+		text-align: center;
+	}
 }
 
 @media screen and (min-width: 320px) {
@@ -33,6 +38,13 @@
 		display: flex;
 		align-items: center;
 		padding: 0 15px;
+
+		.footer & {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			align-items: baseline;
+		}
 	}
 }
 
@@ -50,14 +62,11 @@
 		.what-we-do & {
 			display: block;
 		}
+
+		.footer & {
+			padding-top: 60px;
+			display: flex;
+			text-align: left;
+		}
 	}
 }
-
-// .container {
-// 	width: 1200px;
-// 	padding: 0 15px;
-
-// 	.footer & {
-// 		padding-top: 60px;
-// 		display: flex;
-// 	}

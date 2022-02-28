@@ -44,17 +44,17 @@
 					</ul>
 				</nav>
 				<div class="contact">
-				<a class="email" href="mailto:info@devstudio.com">
-					<svg class="email__icon">
-						<use href="images/icons.svg#envelope"></use></svg
-					>info@devstudio.com</a
-				>
-				<a href="tel:+48111111111" class="phone-number">
-					<svg class="phone-number__icon">
-						<use href="images/icons.svg#smartphone"></use>
-					</svg>
-					+48 111 111 111</a
-				>
+					<a class="email" href="mailto:info@devstudio.com">
+						<svg class="email__icon">
+							<use href="images/icons.svg#envelope"></use></svg
+						>info@devstudio.com</a
+					>
+					<a href="tel:+48111111111" class="phone-number">
+						<svg class="phone-number__icon">
+							<use href="images/icons.svg#smartphone"></use>
+						</svg>
+						+48 111 111 111</a
+					>
 				</div>
 
 				<button mobile-menu-open type="button" class="menu-mobile__open">
@@ -65,16 +65,21 @@
 			</div>
 
 			<div mobile-menu class="menu-mobile backdrop is-hidden">
-				
-				<button type="button" class="close-btn menu-mobile__close-btn" mobile-menu-close>
+				<button
+					type="button"
+					class="close-btn menu-mobile__close-btn"
+					mobile-menu-close
+				>
 					<svg class="close-btn__icon">
 						<use href="images/icons.svg#close-icon"></use>
 					</svg>
 				</button>
-				
+
 				<ul class="menu-mobile__list">
 					<li class="menu-mobile__item list">
-						<a class="menu-mobile__link menu-mobile__link--active" href="index.html"
+						<a
+							class="menu-mobile__link menu-mobile__link--active"
+							href="index.html"
 							>Agencja</a
 						>
 					</li>
@@ -94,7 +99,7 @@
 							+48 111 111 111</a
 						>
 					</li>
-					<li class="mobile-contacts__item  list">
+					<li class="mobile-contacts__item list">
 						<a class="mobile-contacts__link" href="mailto:info@devstudio.com">
 							info@devstudio.com</a
 						>
@@ -119,12 +124,10 @@
 
 		<section class="hero">
 			<div class="container">
-			
 				<h1 class="hero__header">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
 				<button class="primary-btn" type="button" data-modal-open>
 					Zamów usługe
 				</button>
-			
 			</div>
 		</section>
 
@@ -283,7 +286,7 @@
 
 			<!-- What we do-->
 
-			<section class="what-we-do section">
+			<section class="what-we-do">
 				<div class="container">
 					<h2 class="second-header">Czym się zajmujemy</h2>
 					<ul class="what-we-do__list list">
@@ -331,24 +334,35 @@
 					<h2 class="second-header">Nasz zespół</h2>
 					<ul class="our-team__list list">
 						<li class="our-team__item">
-							
-								
-						<picture class="our-team__img">
-                            <source
-                                srcset="images/images_mainpage/ourteam/1person270x260.jpg 1x, images/images_mainpage/ourteam/1person270x260@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/1person354x374.jpg 1x, images/images_mainpage/ourteam/1person354x374@2x.jpg 2x"
-                                media="(min-width: 768px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/1person450x460.jpg 1x, images/images_mainpage/ourteam/1person450x460@2x.jpg 2x"
-                                media="(min-width: 480px)">
-                            <img class="our-team__img" src="images/images_mainpage/ourteam/1person270x260.jpg"
-                                alt="facet w okularach" />
-                        </picture>
+							<picture class="our-team__img">
+								<source
+									srcset="
+										images/images_mainpage/ourteam/1person270x260.jpg    1x,
+										images/images_mainpage/ourteam/1person270x260@2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/1person354x374.jpg    1x,
+										images/images_mainpage/ourteam/1person354x374@2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/1person450x460.jpg    1x,
+										images/images_mainpage/ourteam/1person450x460@2x.jpg 2x
+									"
+									media="(min-width: 480px)"
+								/>
+								<img
+									class="our-team__img"
+									src="images/images_mainpage/ourteam/1person270x260.jpg"
+									alt="facet w okularach"
+								/>
+							</picture>
 
-
-							
 							<h3 class="our-team__employee">John Doe</h3>
 							<p class="our-team__occupation">Product Designer</p>
 							<ul class="socials-list list">
@@ -380,22 +394,35 @@
 							</ul>
 						</li>
 						<li class="our-team__item">
-
 							<picture class="our-team__img">
-                            <source
-                                srcset="images/images_mainpage/ourteam/2person270x260.jpg 1x, images/images_mainpage/ourteam/2person270x260@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/2person354x374.jpg 1x, images/images_mainpage/ourteam/2person354x374@2x.jpg 2x"
-                                media="(min-width: 768px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/2person450x460.jpg 1x, images/images_mainpage/ourteam/2person450x460@2x.jpg 2x"
-                                media="(min-width: 480px)">
-                            <img class="our-team__img" src="images/images_mainpage/ourteam/2person270x260.jpg"
-                                alt="kobieta w okularach" />
-                        </picture>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/2person270x260.jpg    1x,
+										images/images_mainpage/ourteam/2person270x260@2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/2person354x374.jpg    1x,
+										images/images_mainpage/ourteam/2person354x374@2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/2person450x460.jpg    1x,
+										images/images_mainpage/ourteam/2person450x460@2x.jpg 2x
+									"
+									media="(min-width: 480px)"
+								/>
+								<img
+									class="our-team__img"
+									src="images/images_mainpage/ourteam/2person270x260.jpg"
+									alt="kobieta w okularach"
+								/>
+							</picture>
 
-						
 							<h3 class="our-team__employee">John Doe</h3>
 							<p class="our-team__occupation">Frontend Developer</p>
 							<ul class="socials-list list">
@@ -427,21 +454,35 @@
 							</ul>
 						</li>
 						<li class="our-team__item">
+							<picture class="our-team__img">
+								<source
+									srcset="
+										images/images_mainpage/ourteam/3person270x260.jpg    1x,
+										images/images_mainpage/ourteam/3person270x260@2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/3person354x374.jpg    1x,
+										images/images_mainpage/ourteam/3person354x374@2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/3person450x460.jpg    1x,
+										images/images_mainpage/ourteam/3person450x460@2x.jpg 2x
+									"
+									media="(min-width: 480px)"
+								/>
+								<img
+									class="our-team__img"
+									src="images/images_mainpage/ourteam/3person270x260.jpg"
+									alt="facet bez okularów"
+								/>
+							</picture>
 
-								<picture class="our-team__img">
-                            <source
-                                srcset="images/images_mainpage/ourteam/3person270x260.jpg 1x, images/images_mainpage/ourteam/3person270x260@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/3person354x374.jpg 1x, images/images_mainpage/ourteam/3person354x374@2x.jpg 2x"
-                                media="(min-width: 768px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/3person450x460.jpg 1x, images/images_mainpage/ourteam/3person450x460@2x.jpg 2x"
-                                media="(min-width: 480px)">
-                            <img class="our-team__img" src="images/images_mainpage/ourteam/3person270x260.jpg"
-                                alt="facet bez okularów" />
-                        </picture>
-					
 							<h3 class="our-team__employee">John Doe</h3>
 							<p class="our-team__occupation">Marketing</p>
 							<ul class="socials-list list">
@@ -474,18 +515,33 @@
 						</li>
 						<li class="our-team__item">
 							<picture class="our-team__img">
-                            <source
-                                srcset="images/images_mainpage/ourteam/4person270x260.jpg 1x, images/images_mainpage/ourteam/4person270x260@2x.jpg 2x"
-                                media="(min-width: 1200px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/4person354x374.jpg 1x, images/images_mainpage/ourteam/4person354x374@2x.jpg 2x"
-                                media="(min-width: 768px)">
-                            <source
-                                srcset="images/images_mainpage/ourteam/4person450x460.jpg 1x, images/images_mainpage/ourteam/4person450x460@2x.jpg 2x"
-                                media="(min-width: 480px)">
-                            <img class="our-team__img" src="images/images_mainpage/ourteam/4person270x260.jpg"
-                                alt="facet w okularach" />
-                        </picture>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/4person270x260.jpg    1x,
+										images/images_mainpage/ourteam/4person270x260@2x.jpg 2x
+									"
+									media="(min-width: 1200px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/4person354x374.jpg    1x,
+										images/images_mainpage/ourteam/4person354x374@2x.jpg 2x
+									"
+									media="(min-width: 768px)"
+								/>
+								<source
+									srcset="
+										images/images_mainpage/ourteam/4person450x460.jpg    1x,
+										images/images_mainpage/ourteam/4person450x460@2x.jpg 2x
+									"
+									media="(min-width: 480px)"
+								/>
+								<img
+									class="our-team__img"
+									src="images/images_mainpage/ourteam/4person270x260.jpg"
+									alt="facet w okularach"
+								/>
+							</picture>
 							<h3 class="our-team__employee">John Doe</h3>
 							<p class="our-team__occupation">UI Designer</p>
 							<ul class="socials-list list">
@@ -568,10 +624,10 @@
 			</section>
 		</main>
 
-		<!-- <footer class="footer">
-			<div class="container">
-				<div class="address-wrapper">
-					<a class="logo" href="index.html"
+		<footer class="footer">
+			<div class="container section">
+				<div class="address__wrapper">
+					<a class="logo logo--footer" href="index.html"
 						>Web<span class="logo__accent--light-theme">Studio</span></a
 					>
 					<address class="address">
@@ -652,10 +708,9 @@
 					</form>
 				</div>
 			</div>
-		</footer> -->
+		</footer>
 
 		<script src="js/modal.js"></script>
 		<script src="js/mobile-menu.js"></script>
-
 	</body>
 </html>

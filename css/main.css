@@ -77,6 +77,10 @@ a {
   display: block;
 }
 
+.our-clients .container {
+  display: block;
+}
+
 @media screen and (min-width: 320px) {
   .container {
     display: flex;
@@ -781,20 +785,24 @@ a {
 
 .our-clients__list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.our-clients__item {
+  margin-bottom: 30px;
+  min-width: 230px;
 }
 
 .our-clients__link {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  width: 170px;
+  justify-content: center;
   height: 92px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 17.71px 32px 14.25px;
   color: #afb1b8;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -810,6 +818,43 @@ a {
   fill: currentColor;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .our-clients__list {
+    justify-content: space-around;
+  }
+  .our-clients__item {
+    flex-basis: calc(100% / 2 - 30px);
+    min-width: 210px;
+    flex-grow: 1;
+  }
+  .our-clients__item:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .our-clients__list {
+    justify-content: space-around;
+  }
+  .our-clients__item {
+    flex-basis: calc(100% / 3 - 30px);
+    min-width: 226px;
+    flex-grow: 1;
+  }
+  .our-clients__item:not(:nth-child(3n)) {
+    margin-right: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .our-clients__list {
+    justify-content: space-between;
+  }
+  .our-clients__item {
+    min-width: 170px;
+  }
+}
+
 .our-team {
   background-color: #f5f4fa;
   margin: 0 auto;
@@ -818,7 +863,7 @@ a {
 .our-team__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .our-team__item {
@@ -851,6 +896,9 @@ a {
 }
 
 @media screen and (min-width: 768px) {
+  .our-team__list {
+    justify-content: space-around;
+  }
   .our-team__item {
     margin-bottom: 30px;
   }

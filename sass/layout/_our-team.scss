@@ -6,7 +6,7 @@
 .our-team__list {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: center;
 }
 
 .our-team__item {
@@ -42,6 +42,10 @@
 // <!-- TABLET -->
 
 @media screen and (min-width: 768px) {
+	.our-team__list {
+		justify-content: space-around;
+	}
+
 	.our-team__item {
 		margin-bottom: 30px;
 	}

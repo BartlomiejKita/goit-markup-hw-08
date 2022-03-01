@@ -4,6 +4,8 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="description" content="Pierwszy projekt strony" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
 		<link
 			rel="stylesheet"
 			href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -42,17 +44,82 @@
 						</li>
 					</ul>
 				</nav>
-				<a class="email" href="mailto:info@devstudio.com">
-					<svg class="email__icon">
-						<use href="images/icons.svg#envelope"></use></svg
-					>info@devstudio.com</a
-				>
-				<a href="tel:+48111111111" class="phone-number">
-					<svg class="phone-number__icon">
-						<use href="images/icons.svg#smartphone"></use>
+				<div class="contact">
+					<a class="email" href="mailto:info@devstudio.com">
+						<svg class="email__icon">
+							<use href="images/icons.svg#envelope"></use></svg
+						>info@devstudio.com</a
+					>
+					<a href="tel:+48111111111" class="phone-number">
+						<svg class="phone-number__icon">
+							<use href="images/icons.svg#smartphone"></use>
+						</svg>
+						+48 111 111 111</a
+					>
+				</div>
+
+				<button mobile-menu-open type="button" class="menu-mobile__open">
+					<svg class="menu-mobile__open-icon">
+						<use href="./images/icons.svg#open"></use>
 					</svg>
-					+48 111 111 111</a
+				</button>
+			</div>
+
+			<div mobile-menu class="menu-mobile backdrop is-hidden">
+				<button
+					type="button"
+					class="close-btn menu-mobile__close-btn"
+					mobile-menu-close
 				>
+					<svg class="close-btn__icon">
+						<use href="images/icons.svg#close-icon"></use>
+					</svg>
+				</button>
+
+				<ul class="menu-mobile__list">
+					<li class="menu-mobile__item list">
+						<a class="menu-mobile__link" href="index.html">Agencja</a>
+					</li>
+					<li class="menu-mobile__item list">
+						<a
+							class="menu-mobile__link menu-mobile__link--active"
+							href="portfolio.html"
+							>Portfolio</a
+						>
+					</li>
+					<li class="menu-mobile__item list">
+						<a class="menu-mobile__link" href="#">Kontakt</a>
+					</li>
+				</ul>
+				<ul class="mobile-contacts">
+					<li class="mobile-contacts__item list">
+						<a
+							class="mobile-contacts__link mobile-contacts__link--accent"
+							href="tel:+48111111111"
+						>
+							+48 111 111 111</a
+						>
+					</li>
+					<li class="mobile-contacts__item list">
+						<a class="mobile-contacts__link" href="mailto:info@devstudio.com">
+							info@devstudio.com</a
+						>
+					</li>
+				</ul>
+				<ul class="mobile-socials">
+					<li class="mobile-socials__item list">
+						<a href="" class="mobile-socials__link">Instagram</a>
+					</li>
+					<li class="mobile-socials__item list">
+						<a href="" class="mobile-socials__link">Twitter</a>
+					</li>
+					<li class="mobile-socials__item list">
+						<a href="" class="mobile-socials__link">Facebook</a>
+					</li>
+					<li class="mobile-socials__item list">
+						<a href="" class="mobile-socials__link">LinkedIn</a>
+					</li>
+				</ul>
 			</div>
 		</header>
 
@@ -80,13 +147,35 @@
 					<ul class="projects__list list">
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/laptopscreen.jpg"
-									alt="obrazek otwartego laptopa"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/1img370x294.jpg        1x,
+											images/images_portfolio/1img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/1img354x294.jpg        1x,
+											images/images_portfolio/1img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/1img450x294.jpg        1x,
+											images/images_portfolio/1img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/1img354x294.jpg "
+										alt="obrazek otwartego laptopa"
+									/>
+								</picture>
+
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -103,13 +192,35 @@
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/neworleangraphic.jpg"
-									alt="obrazek dwóch koszykarzy New Orlean i Golden Star"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/2img370x294.jpg        1x,
+											images/images_portfolio/2img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/2img354x294.jpg        1x,
+											images/images_portfolio/2img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/2img450x294.jpg        1x,
+											images/images_portfolio/2img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/2img354x294.jpg "
+										alt="obrazek dwóch koszykarzy New Orlean i Golden Star"
+									/>
+								</picture>
+
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -120,21 +231,41 @@
 								</div>
 							</div>
 							<div class="projects__border">
-								<p class="projects__title">
-									Grafika New Orlean vs Golden Star
-								</p>
+								<p class="projects__title">Grafika New Orlean vs Golden Star</p>
 								<p class="projects__type">Dizajn</p>
 							</div>
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/seefoodlogo.jpg"
-									alt="logo restauracji Seafood"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/3img370x294.jpg        1x,
+											images/images_portfolio/3img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/3img354x294.jpg        1x,
+											images/images_portfolio/3img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/3img450x294.jpg        1x,
+											images/images_portfolio/3img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/3img354x294.jpg "
+										alt="logo restauracji Seafood"
+									/>
+								</picture>
+
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -151,13 +282,34 @@
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/headphones.jpg"
-									alt="obrazek słuchawek"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/4img370x294.jpg        1x,
+											images/images_portfolio/4img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/4img354x294.jpg        1x,
+											images/images_portfolio/4img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/4img450x294.jpg        1x,
+											images/images_portfolio/4img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/4img354x294.jpg "
+										alt="obrazek słuchawek"
+									/>
+								</picture>
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -174,13 +326,34 @@
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/twoboxes.jpg"
-									alt="obrazek z dwoma pudełkami"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/5img370x294.jpg        1x,
+											images/images_portfolio/5img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/5img354x294.jpg        1x,
+											images/images_portfolio/5img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/5img450x294.jpg        1x,
+											images/images_portfolio/5img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/5img354x294.jpg "
+										alt="obrazek z dwoma pudełkami"
+									/>
+								</picture>
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -197,13 +370,34 @@
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/screen.jpg"
-									alt="obrazek monitora"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/6img370x294.jpg        1x,
+											images/images_portfolio/6img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/6img354x294.jpg        1x,
+											images/images_portfolio/6img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/6img450x294.jpg        1x,
+											images/images_portfolio/6img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/6img354x294.jpg "
+										alt="obrazek monitora"
+									/>
+								</picture>
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -220,13 +414,34 @@
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/magazine.jpg"
-									alt="obrazek z otwartym magazynem"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/7img370x294.jpg        1x,
+											images/images_portfolio/7img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/7img354x294.jpg        1x,
+											images/images_portfolio/7img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/7img450x294.jpg        1x,
+											images/images_portfolio/7img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/7img354x294.jpg "
+										alt="obrazek otwartego magazynu"
+									/>
+								</picture>
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -243,13 +458,34 @@
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/labeltag.jpg"
-									alt="obrazek z metką"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/8img370x294.jpg        1x,
+											images/images_portfolio/8img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/8img354x294.jpg        1x,
+											images/images_portfolio/8img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/8img450x294.jpg        1x,
+											images/images_portfolio/8img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/8img354x294.jpg "
+										alt="obrazek z metką"
+									/>
+								</picture>
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -266,13 +502,34 @@
 						</li>
 						<li class="projects__item">
 							<div class="projects__wrapper">
-								<img
-									class="projects__img"
-									src="images/images_portfolio/openedlaptop.jpg"
-									alt="obrazek otwartego laptopa"
-									width="370"
-									height="294"
-								/>
+								<picture class="projects__img">
+									<source
+										srcset="
+											images/images_portfolio/9img370x294.jpg        1x,
+											images/images_portfolio/9img370x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 1200px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/9img354x294.jpg        1x,
+											images/images_portfolio/9img354x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 768px)"
+									/>
+									<source
+										srcset="
+											images/images_portfolio/9img450x294.jpg        1x,
+											images/images_portfolio/9img450x294.jpg@2x.jpg 2x
+										"
+										media="(min-width: 480px)"
+									/>
+									<img
+										class="projects__img"
+										src="images/images_portfolio/9img354x294.jpg "
+										alt="obrazek otwartego laptopa"
+									/>
+								</picture>
 								<div class="projects__text-popup">
 									<p>
 										Technocrack jest popularną platformą wykorzystywaną do
@@ -291,10 +548,11 @@
 				</div>
 			</section>
 		</main>
+
 		<footer class="footer">
-			<div class="container">
-				<div class="address-wrapper">
-					<a class="logo" href="index.html"
+			<div class="container section">
+				<div class="address__wrapper">
+					<a class="logo logo--footer" href="index.html"
 						>Web<span class="logo__accent--light-theme">Studio</span></a
 					>
 					<address class="address">
@@ -376,5 +634,6 @@
 				</div>
 			</div>
 		</footer>
+		<script src="js/mobile-menu.js"></script>
 	</body>
 </html>

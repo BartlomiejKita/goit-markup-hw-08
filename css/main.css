@@ -1179,7 +1179,7 @@ a {
 
 .projects__title {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 2;
   letter-spacing: 0.06em;
   padding-top: 20px;
@@ -1212,6 +1212,9 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1151px) {
   .filters__list {
     justify-content: center;
+  }
+  .projects__title {
+    font-size: 18px;
   }
   .projects__item:not(:nth-child(2n)) {
     margin-right: 30px;
